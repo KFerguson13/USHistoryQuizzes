@@ -1,0 +1,19 @@
+.nav-link {
+    color: rgb(197, 77, 77) !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: rgb(136, 44, 44) !important;
+}
+
+.home-link {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.home-link:hover {
+    color:rgb(197, 77, 77)
+}

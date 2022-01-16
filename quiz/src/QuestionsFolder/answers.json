@@ -1,0 +1,86 @@
+{   "Test1":
+     [ 
+        {
+            "id": 0,
+            "Question": "What was the name of the land bridge that connected Asia and North America?",
+            "Answers": ["Beringian Strait", "Atlantic Strait", "Bering Strait", "Pangean Strait"],
+            "CorrectAnswer": "Bering Strait"
+        },
+
+        {
+            "id": 1,
+            "Question": "What crop was relied on to develop the Western Hemisphere's first settled population?",
+            "Answers": ["Corn", "Squash", "Wheat", "Beans"],
+            "CorrectAnswer": "Corn"
+        },
+
+        {
+            "id": 2,
+            "Question": "What three crops are known as the 'Three Sisters'?",
+            "Answers": ["Corn, Wheat, Beans", "Squash, Beans, Carrots", "Squash, Beans, Corn", "Wheat, Squash, Beans"],
+            "CorrectAnswer": "Squash, Beans, Corn"
+        },
+
+        {
+            "id": 3,
+            "Question": "Define Chiefdom.",
+            "Answers": ["A hierarchical, clan-based system that gave leaders both secular and sacred authority",
+                        "A non-hierarchical, clan-based system where there is no central authority",
+                        "A hierarchical, clan-based system that gave leaders only sacred authority",
+                        "A hierarchical, clan based system that gave leaders only secular authority"],
+            "CorrectAnswer": "A hierarchical, clan-based system that gave leaders both secular and sacred authority"
+        },
+
+        {
+            "id": 4,
+            "Question": "What were gathering in the Pacific Northwest centered on elaborate feasts called?",
+            "Answers": ["Potlucks", "Potlatches", "Potlaches", "Potlacks"],
+            "CorrectAnswer": "Potlatches"
+        },
+
+        {
+            "id": 5,
+            "Question": "Who were the first Europeans to reach the Americas?",
+            "Answers": ["The British", "The Portuguese", "The Spanish", "The Scandinavians"],
+            "CorrectAnswer": "The Scandinavians"
+        },
+
+        {
+            "id": 6,
+            "Question": "Where did Columnbus and the other explorers land in 1492?",
+            "Answers": ["Florida", "The Bahamas", "Brazil", "Guatamala"],
+            "CorrectAnswer": "The Bahamas"
+        },
+
+        {
+            "id": 7,
+            "Question": "What item did Columbus demand from the Arawaks?",
+            "Answers": ["Bronze", "Silver", "Gold", "Diamonds"],
+            "CorrectAnswer": "Gold"
+        },
+
+        {
+            "id": 8,
+            "Question": "What was the most powerful Native Civilzation ever seen in the Western Hemisphere?",
+            "Answers": ["The Aztecs", "The Mayans", "The Incans", "The Cherokee"],
+            "CorrectAnswer": "The Aztecs"
+        },
+
+        {
+            "id": 9,
+            "Question": "How long did the war between the Spaniards and Aztecs last?",
+            "Answers": ["7 months,", "1 year", "2 years", "3 years"],
+            "CorrectAnswer": "2 years"
+        }
+    ],
+
+    "Test2": [
+        {
+            "id": 0,
+            "Question": "What year did the American Revolution Start?",
+            "Answers": ["1776", "1775", "1773", "1772"],
+            "CorrectAnswer": "1775"
+        }
+
+    ]
+}

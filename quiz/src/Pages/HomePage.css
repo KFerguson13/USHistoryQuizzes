@@ -1,0 +1,36 @@
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.test1 {
+    background: url(https://media.nationalgeographic.org/assets/photos/278/559/d190b303-7935-4a5f-8636-226eb6e4ea05.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 20vh;
+    border-radius: 20px;
+    color: white;
+}
+
+.test1:hover {
+    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(https://media.nationalgeographic.org/assets/photos/278/559/d190b303-7935-4a5f-8636-226eb6e4ea05.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.test2 {
+    background: url(https://media.nationalgeographic.org/assets/photos/278/559/d190b303-7935-4a5f-8636-226eb6e4ea05.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 20vh;
+    border-radius: 20px;
+    color: white;
+}
+
+.test2:hover {
+    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(https://media.nationalgeographic.org/assets/photos/278/559/d190b303-7935-4a5f-8636-226eb6e4ea05.jpg);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}

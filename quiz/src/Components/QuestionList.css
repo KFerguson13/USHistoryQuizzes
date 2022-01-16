@@ -1,0 +1,14 @@
+.answer_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrong_answer {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(228, 125, 142);
+    border-radius: 10px;
+    color: white;
+}
