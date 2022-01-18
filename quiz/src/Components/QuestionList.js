@@ -1,14 +1,17 @@
 import ListOfQuestions from "../QuestionsFolder/answers.json";
 import { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import './QuestionList.css';
 
 /** This component fetches the data from the json file and displays a question */
 const QuestionList = () => {
+    const navigate = useNavigate();
+
     const [problemNumber, setProblemNumber] = useState(0);
     const [wrong, setWrong] = useState(false);
     const [start, setStart] = useState(false);
     const [finished, setFinished] = useState(false);
+    const [formAnswer, setFormAnswer] = useState("")
 
     //getting a list of questions and then picking a random one
     const stringifieddata = JSON.stringify(ListOfQuestions)
@@ -23,6 +26,33 @@ const QuestionList = () => {
      * on to the next question until they give a correct answer. This function also checks whether the user has reached the
      * end of the quiz.
      */
+
+    const AnswerChangeHandler = (event) => {
+        setFormAnswer(event.target.value)
+        console.log(event.target.value)
+    }
+
+    const submitHandler = (event) => {
+        event.preventDefault()
+
+        if (formAnswer === questions[problemNumber].CorrectAnswer) {
+            console.log("Correct!");
+            setWrong(false);
+
+            if (problemNumber + 1 !== 10)
+                setProblemNumber(problemNumber + 1);
+            else
+                setFinished(true);
+        }
+        else {
+            setWrong(true);
+        }
+
+        setFormAnswer("")
+
+        
+    }
+
     const checkAnswer = (answer) => {
         if (answer === questions[problemNumber].CorrectAnswer) {
             console.log("Correct!");
@@ -36,44 +66,88 @@ const QuestionList = () => {
         }
 
         else {
-            console.log("Incorrect!");
             setWrong(true);
         }
     }
     
     return (
-        <div className = "container-fluid">
+        <div className = "container-fluid mt-2">
             {!start && 
-                <section>
+                <section className = "start">
+                    <h1 className = "display-4"> Ready to Go? </h1>
+                    <hr></hr>
                     <p>
                     You will be asked a series of question on this chapter's material. If you give an incorrect answer, you
-                    will not be able to move on to the next question until you get it right. Are you ready to start?
+                    will not be able to move on to the next question until you get it right. If you get the question wrong
+                    even once, you will not receive a point for it. Are you ready to start?
                     </p>
-                    <button className="btn btn-primary" onClick = {() => setStart(true)}> Start </button>
+                    <button className="btn btn-primary btn-lg" onClick = {() => setStart(true)}> Start </button>
                 </section>}
 
 
-            {finished && <section> You're done! </section>}
-            {start && !finished && <><h1 style={{ color: "blue" }}> {questions[problemNumber].Question} </h1><section className="answer_list">
-                <button className="btn btn-primary m-1"
-                    onClick={() => checkAnswer(questions[problemNumber].Answers[0])}>
-                    {questions[problemNumber].Answers[0]}
-                </button>
+            {finished && 
+                <section className = "finished"> 
+                    <h3> 
+                        You're Done! 
+                    </h3>
+                    <button className = "btn btn-primary btn-lg" onClick = {() => navigate('/Home', {replace: true})}> Home </button>
+                </section>}
+            
+            {start && !finished && <> <h3>{questions[problemNumber].Question} </h3>
+            <hr></hr> 
+            
+            <section className="answer_list">
+                <form>
+                    <div>
+                        <input
+                            type ="radio"
+                            name = "formanswer"
+                            value = {questions[problemNumber].Answers[0]}
+                            onChange = {AnswerChangeHandler}
+                            checked = {questions[problemNumber].Answers[0] === formAnswer}
+                            />
 
-                <button className="btn btn-primary m-1"
-                    onClick={() => checkAnswer(questions[problemNumber].Answers[1])}>
-                    {questions[problemNumber].Answers[1]}
-                </button>
+                        <label> {questions[problemNumber].Answers[0]} </label>
 
-                <button className="btn btn-primary m-1"
-                    onClick={() => checkAnswer(questions[problemNumber].Answers[2])}>
-                    {questions[problemNumber].Answers[2]}
-                </button>
+                        <br></br>
 
-                <button className="btn btn-primary m-1"
-                    onClick={() => checkAnswer(questions[problemNumber].Answers[3])}>
-                    {questions[problemNumber].Answers[3]}
-                </button>
+                        <input
+                            type ="radio"
+                            name = "formanswer"
+                            value = {questions[problemNumber].Answers[1]}
+                            onChange = {AnswerChangeHandler}
+                            checked = {questions[problemNumber].Answers[1] === formAnswer}
+                            />
+                        <label> {questions[problemNumber].Answers[1]}</label> 
+
+                        <br></br>
+
+                        <input
+                            type ="radio"
+                            name = "formanswer"
+                            value = {questions[problemNumber].Answers[2]}
+                            onChange = {AnswerChangeHandler}
+                            checked = {questions[problemNumber].Answers[2] === formAnswer}
+                            />
+                        <label> {questions[problemNumber].Answers[2]}</label> 
+                        
+                        <br></br>
+                        
+                        <input
+                            type ="radio"
+                            name = "formanswer"
+                            value = {questions[problemNumber].Answers[3]}
+                            onChange = {AnswerChangeHandler}
+                            checked = {questions[problemNumber].Answers[3] === formAnswer}
+                            />
+                        <label> {questions[problemNumber].Answers[3]}</label> 
+
+                        <br></br>
+
+                        <button className="btn btn-primary mt-1 mb-2" onClick = {submitHandler}> Test </button>
+                    </div>
+                </form>
+                
             </section></> }
             
             {wrong && 

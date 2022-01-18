@@ -3,6 +3,13 @@
     color: black;
 }
 
+.quiz-intro {
+    height: 20vh;
+    background: rgba(170,125,130);
+    border-radius: 10px;
+    color: white;
+}
+
 .test1 {
     background: url(https://media.nationalgeographic.org/assets/photos/278/559/d190b303-7935-4a5f-8636-226eb6e4ea05.jpg);
     background-position: center;
@@ -20,7 +27,7 @@
 }
 
 .test2 {
-    background: url(https://media.nationalgeographic.org/assets/photos/278/559/d190b303-7935-4a5f-8636-226eb6e4ea05.jpg);
+    background: url(https://www.history.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTU3OTIzNjU0NzY3NDg2NjEw/jamestown-gettyimages-50996537.jpg);
     background-position: center;
     background-size: cover;
     height: 20vh;
@@ -29,7 +36,7 @@
 }
 
 .test2:hover {
-    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(https://media.nationalgeographic.org/assets/photos/278/559/d190b303-7935-4a5f-8636-226eb6e4ea05.jpg);
+    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(https://www.history.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTU3OTIzNjU0NzY3NDg2NjEw/jamestown-gettyimages-50996537.jpg);
     background-position: center;
     background-size: cover;
     cursor: pointer;

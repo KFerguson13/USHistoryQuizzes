@@ -1,7 +1,7 @@
-.answer_list {
-    display: flex;
-    flex-direction: column;
+.answer_list label {
+   margin-bottom: 5px;
 }
+
 
 .wrong_answer {
     height: 5rem;
