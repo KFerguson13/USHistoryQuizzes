@@ -77,10 +77,226 @@
     "Test2": [
         {
             "id": 0,
-            "Question": "What year did the American Revolution Start?",
-            "Answers": ["1776", "1775", "1773", "1772"],
-            "CorrectAnswer": "1775"
+            "Question": "What was the Black Legend?",
+            "Answers": ["The plague", "Spain's infamous treatment of indegenous people in the Americas", 
+                "A decrease in interest in the church", "Portugal's infamous treatment of indegenous people in the Americas"],
+            "CorrectAnswer": "Spain's infamous treatment of indegenous people in the Americas"
+        },
+
+        {
+            "id": 1,
+            "Question": "What was the fabled Northwest Passage?",
+            "Answers": ["A mythical waterway passing through the North American continent to Asia", "A mythical waterway passing through the North American continent to Africa", 
+                "A mythical waterway passing through the North American content towards a massive amount of hidden gold", "A mythical waterway passing through the North American continent to a massive amount of hidden silver"],
+            "CorrectAnswer": "A mythical waterway passing through the North American continent to Asia"
+        },
+
+        {
+            "id": 2,
+            "Question": "What was the motive of French colonization?",
+            "Answers": ["To create permanent settlements", "To expand trading", "To seek gold", "To seek land"],
+            "CorrectAnswer": "To expand trading"
+        },
+
+        {
+            "id": 3,
+            "Question": "What were some freedoms the Dutch enjoyed?",
+            "Answers": ["Women maintained separate legal identities from their husbands and greater religious tolerance and freedom of the press was embraced", 
+                "Slavery was outlawed and greater religious tolerance and freedom of the press was embraced", 
+                "Slavery was outlawed and women maintained separate legal identities from their husbands", "Greater religious tolerance and freedom of the press was embraced and lower classes enjoyed more political representation"],
+            "CorrectAnswer": "Women maintained separate legal identities from their husbands and greater religious tolerance and freedom of the press was embraced"
+        },
+
+        {
+            "id": 4,
+            "Question": "What was at the site of modern-day Wall Street under the Dutch?",
+            "Answers": ["A major trading site", "A defensive wall", "Nothing", "A plantation"],
+            "CorrectAnswer": "A defensive wall"
+        },
+
+        {
+            "id": 5,
+            "Question": "What modern-day country occupies what Portugal claimed as territory?",
+            "Answers": ["Argentina", "Chile", "Brazil", "Venezuela"],
+            "CorrectAnswer": "Brazil"
+        }, 
+
+        {
+            "id": 6,
+            "Question": "What industries powered early colonial Brazil?",
+            "Answers": ["Tobacco and the slave trade", "Sugar and the slave trade", "Extraction of silver", "Extraction of gold"],
+            "CorrectAnswer": "Sugar and the slave trade"
+        },
+
+        {
+            "id": 7,
+            "Question": "What happened to the Roanoke Colony?",
+            "Answers": ["They were killed by local Native Americans", "They intermarried into a local tribe", "It's still unknown", "They died from a famine"],
+            "CorrectAnswer": "It's still unknown"
+        },
+
+        {
+            "id": 8,
+            "Question": "What was wrong with where Jamestown was located?",
+            "Answers": ["The area was riddled with disease", "The soil was terrible", "The local Native Americans were hostile and the brackish tidal water led to disease", 
+                "The soil was terrible and brackish tidal water led to disease"],
+            "CorrectAnswer": "The soil was terrible and brackish tidal water led to disease"
+        },
+
+        {
+            "id": 9,
+            "Question": "What items did the Powhatan want?",
+            "Answers": ["Chickens, tools, and guns", "Kettles, tools, and horses", "Guns, metal ax-heads, and kettles", "Metal ax-heads, kettles, tools and guns"],
+            "CorrectAnswer": "Metal ax-heads, kettles, tools and guns"
         }
 
+    ],
+    "Test3": [
+
+        {
+            "id": 0,
+            "Question": "Which nation lost New York and then briefly reconquered it in 1667?",
+            "Answers": ["Spain", "The Netherlands", "France", "Sweden"],
+            "CorrectAnswer": "The Netherlands"
+        },
+
+        {
+            "id": 1,
+            "Question": "Carolina could be called 'a colony of a colony'. What was the colony in question?",
+            "Answers": ["Haiti", "Jamaica", "Brazil", "Barbados"],
+            "CorrectAnswer": "Barbados"
+        },
+
+        {
+            "id": 2,
+            "Question": "What incentives were offered for people to settle in Carolina?",
+            "Answers": ["Large land grant and religious freedom", "Religious tolerance, political representation by assembly, excemption from fees, and large land grants", 
+                "Criminals were offered indentured servitude over other punishments", "Political representation by assembly and large land grants"],
+            "CorrectAnswer": "Religious tolerance, political representation by assembly, excemption from fees, and large land grants"
+        },
+
+        {
+            "id": 3,
+            "Question": "Why was North Carolina founded as a separate province?",
+            "Answers": ["This region was resistent to the Carolina authority", "The North and South built their economies around different crops",
+                "There was conflict within the Carolina authority that caused a split", "There is no significant reason"],
+            "CorrectAnswer": "This region was resistent to the Carolina authority"
+        },
+
+        {
+            "id": 4,
+            "Question": "What was the Glorious Revolution?",
+            "Answers": ["The overthrowing of Charles II over his Protestant and pro-French policies", 
+                "The overthrowing of William of Holland over his Protestant and pro-Spain policies", "The overthrowing of James II over his Catholic and pro-French policies", 
+                "The overthrowing of William of Holland over his Catholic and pro-French policies"],
+            "CorrectAnswer": "The overthrowing of James II over his Catholic and pro-French policies"
+        },
+
+        {
+            "id": 5,
+            "Question": "What colonies were in the Dominion of New England?",
+            "Answers": ["Virginia and the New England colonies", "The New England colonies", "The New England colonies and North Carolina", "The New England colonies, New York, and New Jersey"],
+            "CorrectAnswer": "The New England colonies, New York, and New Jersey"
+        },
+
+        {
+            "id": 6,
+            "Question": "What did the rebels of Bacon's Rebellion want?",
+            "Answers": ["To expand westward for more land", "Lower taxes", "More political representation", "Larger land grants for newly freed servants and slaves"],
+            "CorrectAnswer": "To expand westward for more land"
+        },
+
+        {
+            "id": 7,
+            "Question": "Who was Metacom?",
+            "Answers": ["A Wampanoag sachem who led the efforts against Puritan expansion", "A Pequot sachem who led the efforts against Puritan expansion", 
+                "A Mohegan sachem who sought to ally with the Puritans", "A Wamanoag sachem who sought to ally with the Puritans"],
+            "CorrectAnswer": "A Wampanoag sachem who led the efforts against Puritan expansion"
+        },
+
+        {
+            "id": 8,
+            "Question": "What started the Susquehannock War?",
+            "Answers": ["The colonists expanding westerard into Susquehannock territory", "The accidental killing of Susquehannock people", "The Susquehannock acted on increasingly feeling a loss in the balance of power",
+                "A group of rebels went into Susquehannock territory looking for conflict"],
+            "CorrectAnswer": "The accidental killing of Susquehannock people"
+        },
+
+        {
+            "id": 9,
+            "Question": "What did Sarah Drummond, the wife of a rebel leader, advocate?",
+            "Answers": ["More religious tolerance in the Virginia colony", "Political representation for those with no land", 
+                "Independence from England", "Further westward expansion"],
+            "CorrectAnswer": "Independence from England"
+        }
+    ],
+
+    "Test4": [
+        
+        {
+            "id": 0,
+            "Question": "Early on in Virginia, ___ could be exchanged for notes that could be traded as money.",
+            "Answers": ["Silver", "Gold", "Tobacco", "Sugar"],
+            "CorrectAnswer": "Tobacco"
+        },
+        
+        {
+            "id": 1,
+            "Question": "Which colony became the first place in the Western World to issue paper bills as money?",
+            "Answers": ["New York", "Virginia", "North Carolinia", "Massachusetts"],
+            "CorrectAnswer": "Massachusetts"
+        },
+
+        {
+            "id": 2,
+            "Question": "One in ___ coloninists lived in cities by 1775.",
+            "Answers": ["Twenty", "Ten", "Thirty", "Fifty"],
+            "CorrectAnswer": "Twenty"
+        },
+
+        {
+            "id": 3,
+            "Question": "In 1750, which colony had a majority enslaved African population?",
+            "Answers": ["North Carolina", "South Carolina", "Virginia", "Georgia"],
+            "CorrectAnswer": "South Carolina"
+        },
+
+        {
+            "id": 4,
+            "Question": "In which colonies did slavery never take off as a system of labor?",
+            "Answers": ["Massachusetts, Connecticut, New Hampshire", "New York, New Jersey, Massachusetts", "New Jersey, Connecticut, Massachusetts",
+            "New York, Connecticut, New Hampshire"],
+            "CorrectAnswer": "Massachusetts, Connecticut, New Hampshire"
+        },
+
+        {
+            "id": 5,
+            "Question": "Which colonies were proprietary colonies?",
+            "Answers": ["Pennsylvania, New Jersey, and Delaware", "New york, New Hampshire, and Delaware", "Massachusetts, Rhode Island, Connecticut, and Delaware",
+            "Pennsylvania, Delaware, New Jersey, and Maryland"],
+            "CorrectAnswer": "Pennsylvania, Delaware, New Jersey, and Maryland"
+        },
+
+        {
+            "id": 6,
+            "Question": "Which type of colony was most tightly controlled by the crown?",
+            "Answers": ["Provincial", "Propietary", "Charter", "All were equally controlled by the crown"],
+            "CorrectAnswer": "Provincial"
+        },
+
+        {
+            "id": 7,
+            "Question": "Which type of colony involved property-owning men electing the governors?",
+            "Answers": ["Provincial", "Propietary", "Charter", "All governors were appointed by the crown"],
+            "CorrectAnswer": "Charter"
+        },
+
+        {
+            "id": 8,
+            "Question": "Define social contract.",
+            "Answers": ["It's the idea that government is put in place by the people", "It's the idea that government is put in place by god",
+            "It's the idea that government is put in place by a few wealthy elite.", "It's the idea that government is put in place by a few intellectuals."],
+            "CorrectAnswer": "It's the idea that government is put in place by the people."
+        }
     ]
 }

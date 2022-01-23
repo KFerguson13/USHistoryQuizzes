@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import "./HomePage.css";
 
 const Home = () => {
@@ -42,8 +42,13 @@ const Home = () => {
                     </section>
                 </div>
                 <div>
-                    <section className='test2 d-flex justify-content-center align-items-center' onClick = {() => navigate('/Quizzes/Test2', {replace: true})}>
-                        <h1> Clashing Cultures </h1>
+                    <section className='test2 d-flex justify-content-center align-items-center mb-2' onClick = {() => navigate('/Quizzes/Test2', {replace: true})}>
+                        <h1> Colliding Cultures </h1>
+                    </section>
+                </div>
+                <div>
+                    <section className='test3 d-flex justify-content-center align-items-center mb-2' onClick = {() => navigate('/Quizzes/Test3', {replace: true})}>
+                        <h1> British North America </h1>
                     </section>
                 </div>
             </section>

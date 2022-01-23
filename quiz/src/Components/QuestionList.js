@@ -11,6 +11,7 @@ const QuestionList = () => {
     const [wrong, setWrong] = useState(false);
     const [start, setStart] = useState(false);
     const [finished, setFinished] = useState(false);
+    const [correctAnswers, setCorrectAnswers] = useState(10);
     const [formAnswer, setFormAnswer] = useState("")
 
     //getting a list of questions and then picking a random one
@@ -36,7 +37,6 @@ const QuestionList = () => {
         event.preventDefault()
 
         if (formAnswer === questions[problemNumber].CorrectAnswer) {
-            console.log("Correct!");
             setWrong(false);
 
             if (problemNumber + 1 !== 10)
@@ -45,6 +45,9 @@ const QuestionList = () => {
                 setFinished(true);
         }
         else {
+            if (wrong !== true) {
+                setCorrectAnswers(correctAnswers - 1);
+            }
             setWrong(true);
         }
 
@@ -53,22 +56,6 @@ const QuestionList = () => {
         
     }
 
-    const checkAnswer = (answer) => {
-        if (answer === questions[problemNumber].CorrectAnswer) {
-            console.log("Correct!");
-            setWrong(false);
-
-            if (problemNumber + 1 !== 10)
-                setProblemNumber(problemNumber + 1);
-            else
-                setFinished(true);
-        
-        }
-
-        else {
-            setWrong(true);
-        }
-    }
     
     return (
         <div className = "container-fluid mt-2">
@@ -90,6 +77,8 @@ const QuestionList = () => {
                     <h3> 
                         You're Done! 
                     </h3>
+                    {correctAnswers > 5 && <p> You got over 50% right! Your score is {correctAnswers}/10 </p>}
+                    {correctAnswers <= 5 && <p> You got under 50% correct. Study more and then try again. </p>}
                     <button className = "btn btn-primary btn-lg" onClick = {() => navigate('/Home', {replace: true})}> Home </button>
                 </section>}
             
@@ -144,7 +133,7 @@ const QuestionList = () => {
 
                         <br></br>
 
-                        <button className="btn btn-primary mt-1 mb-2" onClick = {submitHandler}> Test </button>
+                        <button className="btn btn-primary mt-1 mb-2" onClick = {submitHandler}> Submit </button>
                     </div>
                 </form>
                 

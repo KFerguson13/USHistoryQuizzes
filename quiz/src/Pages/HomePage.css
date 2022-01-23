@@ -27,7 +27,7 @@
 }
 
 .test2 {
-    background: url(https://www.history.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTU3OTIzNjU0NzY3NDg2NjEw/jamestown-gettyimages-50996537.jpg);
+    background: url(https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492784447/articles/2013/05/02/jamestown-settlers-were-cannibals-and-more-reasons-the-colony-was-hell/130501-jamestown-strochlic-tease_y74ojf);
     background-position: center;
     background-size: cover;
     height: 20vh;
@@ -36,8 +36,24 @@
 }
 
 .test2:hover {
-    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(https://www.history.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTU3OTIzNjU0NzY3NDg2NjEw/jamestown-gettyimages-50996537.jpg);
+    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492784447/articles/2013/05/02/jamestown-settlers-were-cannibals-and-more-reasons-the-colony-was-hell/130501-jamestown-strochlic-tease_y74ojf);
     background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.test3 {
+    background: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/salem-witch-trials-1692-granger.jpg);
+    background-position: 0% 25%;
+    background-size: cover;
+    height: 20vh;
+    border-radius: 20px;
+    color: white;
+}
+
+.test3:hover {
+    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/salem-witch-trials-1692-granger.jpg);
+    background-position: 0% 25%;
     background-size: cover;
     cursor: pointer;
 }
